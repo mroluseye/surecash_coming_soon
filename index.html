@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>SureCash — Coming Soon</title>
+  <meta name="description" content="SureCash is currently undergoing development and will be back shortly.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0a0f1e;
+      --ink-soft: #2d3548;
+      --ink-muted: #6b7494;
+      --surface: #f5f3ef;
+      --gold: #c8943a;
+      --gold-pale: #faf5e9;
+      --teal: #1a6b5c;
+      --teal-light: #e8f4f0;
+      --white: #ffffff;
+      --border: #e2ddd4;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      background: var(--ink);
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      max-width: 560px;
+      width: 100%;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 4px 24px rgba(10, 15, 30, 0.06);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--gold-pale);
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+    }
+
+    .badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    h1 {
+      font-size: 1.625rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .message {
+      font-size: 1rem;
+      color: var(--ink-soft);
+      margin-bottom: 1.75rem;
+    }
+
+    .notice {
+      background: var(--teal-light);
+      border: 1px solid rgba(26, 107, 92, 0.2);
+      border-left: 4px solid var(--teal);
+      border-radius: 8px;
+      padding: 1.125rem 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .notice-title {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .notice p {
+      font-size: 0.9375rem;
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+
+    .contact {
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+    }
+
+    .contact a {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--ink);
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 1.25rem 1.5rem;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 480px) {
+      .card { padding: 3rem 2.5rem; }
+      h1 { font-size: 1.875rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Sure<span>Cash</span></div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="badge">Under development</div>
+
+      <h1>We'll be back shortly</h1>
+
+      <p class="message">
+        SureCash is undergoing development at the moment and will be back shortly.
+        Thank you for your patience.
+      </p>
+
+      <div class="notice" role="alert">
+        <p class="notice-title">Important notice for recent applicants</p>
+        <p>
+          If you applied for a loan in the last 24 hours, please be informed that
+          your loan was <strong>not processed</strong> and your data will be
+          <strong>deleted from our database</strong>. Apologies for the inconvenience.
+        </p>
+      </div>
+
+      
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 SureCash. A trading name of One Rectangle Limited.
+  </footer>
+
+</body>
+</html>
